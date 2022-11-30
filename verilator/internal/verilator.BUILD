@@ -221,6 +221,19 @@ cc_library(
 )
 
 cc_library(
+    name = "libverilatorthreads",
+    hdrs = [
+        "include/verilated_threads.h",
+    ],
+    includes = ["include"],
+    strip_include_prefix = "include/",
+    defines = [
+        "VL_THREADED"
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
     name = "svdpi",
     hdrs = [
         "include/vltstd/svdpi.h",
