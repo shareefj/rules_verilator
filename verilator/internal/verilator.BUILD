@@ -192,6 +192,7 @@ cc_library(
     ],
     hdrs = [
         "include/verilated.h",
+        "include/verilated_threads.h",
         "include/verilated_config.h",
         "include/verilated_dpi.h",
         "include/verilated_fst_c.h",
